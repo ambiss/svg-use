@@ -1,0 +1,87 @@
+<html lang="pt-br">
+    <head>
+        <title> Let's Go to lear SVG with use</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../resources/animate.css/animate.css">
+        <style>
+            .app-svg > div{
+                border: 1px dashed brown;
+                color: chocolate;
+                font-family: cursive;
+                font-size: 20px;
+                text-shadow: .3px .1px brown;
+                
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 3px 0;
+                padding: 2px 3px 2px;
+            }
+                svg.coffee {
+                    fill: brown;
+                    
+                    height: 50px;
+                    width: 55px;
+                    
+                    vertical-align: middle;
+                }
+            
+                svg.card {
+                    fill: #666;
+                    
+                    height: 60px;
+                    width: 75px;
+                    
+                    vertical-align: middle;
+                }
+                
+                svg.heart {
+                    fill: #f00;
+                    
+                    height: 70px;
+                    width: 65px;
+                    
+                    vertical-align: middle;
+                }
+            
+                svg.time {
+                    fill: cornflowerblue;
+                    
+                    height: 79px;
+                    width: 88px;
+                    
+                    vertical-align: middle;
+                }
+        </style>
+    </head>
+    
+    <body>
+        <div id="page">
+            <h2>to use symbos svgs</h2>
+            <section class="app-svg">
+                <div>
+                    <svg class="coffee"><use xlink:href="symbols.svg#coffee"/></svg>
+                    Aqui vai um café!
+                </div>
+                
+                <div>
+                    <svg class="card"><use xlink:href="symbols.svg#card"/></svg>
+                    Pague com cartão!
+                </div>
+                
+                <div>
+                    <svg class="heart"><use xlink:href="symbols.svg#heart"/></svg>
+                    Seu favorito!
+                </div>
+                
+                <div>
+                    <svg class="time"><use xlink:href="symbols.svg#time"/></svg>
+                    Esta é a hora my friend!
+                </div>
+            </section>
+            <h3 class="animated bounce">Example</h1>
+            
+        </div>
+    </body>
+    
+</html>
